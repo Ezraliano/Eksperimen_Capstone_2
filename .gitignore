@@ -24,4 +24,5 @@ dist-ssr
 *.sw?
 
 unet_dental_segmentation.h5
+debug_image_from_app.png
 .env
