@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import UploadPage from './pages/UploadPage';
 import ResultsPage from './pages/ResultsPage';
 import LearnPage from './pages/LearnPage';
+import ClinicsPage from './pages/ClinicsPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="upload" element={<UploadPage />} />
         <Route path="results/:id" element={<ResultsPage />} />
         <Route path="learn" element={<LearnPage />} />
+        <Route path="clinics" element={<ClinicsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>

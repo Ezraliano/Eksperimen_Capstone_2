@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Scan, Brain, BookOpen, Bluetooth as Tooth, Sparkles } from 'lucide-react';
+import { Scan, Brain, BookOpen, Bluetooth as Tooth, Sparkles, MapPin } from 'lucide-react';
 import FeatureCard from '../components/FeatureCard';
 import TeamMember from '../components/TeamMember';
 
@@ -42,10 +42,10 @@ const HomePage = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              AI-Powered Dental Disease Detection
+              AI-Powered Dental Education Platform
             </h1>
             <p className="text-lg md:text-xl mb-8 opacity-90">
-              Upload your dental images and get instant AI analysis to identify caries, cracks, and cavities with precision.
+              Learn about dental health, analyze dental images with AI, and discover the best dental clinics in Jakarta.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -55,10 +55,10 @@ const HomePage = () => {
                 Upload Image
               </Link>
               <Link
-                to="/learn"
+                to="/clinics"
                 className="btn bg-transparent text-white border border-white hover:bg-white/10"
               >
-                Learn More
+                Find Clinics
               </Link>
             </div>
           </div>
@@ -69,35 +69,35 @@ const HomePage = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">How DentalAI Helps You</h2>
+            <h2 className="text-3xl font-bold mb-4">How Dencation Helps You</h2>
             <p className="text-gray-600">
-              Our intelligent system analyzes dental images to detect issues early and provide professional insights.
+              Our comprehensive platform combines AI technology with educational resources and clinic discovery.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <FeatureCard
-              title="Quick Scan"
-              description="Upload dental images and get instant analysis of potential issues."
+              title="AI Analysis"
+              description="Upload dental images and get instant AI analysis of potential issues."
               icon={Scan}
             />
             <FeatureCard
-              title="AI-Powered"
+              title="Smart Detection"
               description="Our advanced AI algorithms detect various dental conditions with high accuracy."
               icon={Brain}
               color="bg-blue-100 text-blue-600"
             />
             <FeatureCard
-              title="Educational"
+              title="Educational Content"
               description="Learn about dental conditions, their causes, and recommended treatments."
               icon={BookOpen}
               color="bg-green-100 text-green-600"
             />
             <FeatureCard
-              title="Detailed Results"
-              description="Receive comprehensive reports about your dental health with visual indicators."
-              icon={Sparkles}
-              color="bg-amber-100 text-amber-600"
+              title="Clinic Finder"
+              description="Discover and locate the best dental clinics in Jakarta with detailed information."
+              icon={MapPin}
+              color="bg-purple-100 text-purple-600"
             />
           </div>
         </div>
@@ -109,7 +109,7 @@ const HomePage = () => {
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Meet Our Team</h2>
             <p className="text-gray-600">
-              The talented developers behind DentalAI's innovation and success.
+              The talented developers behind Dencation's innovation and success.
             </p>
           </div>
 
@@ -128,18 +128,27 @@ const HomePage = () => {
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/2 p-8 md:p-12">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                  Ready to check your dental health?
+                  Ready to explore dental health?
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  Upload your dental images now and let our AI analyze them for potential issues.
+                  Start your journey with AI-powered dental analysis or find the perfect clinic near you.
                 </p>
-                <Link
-                  to="/upload"
-                  className="btn btn-primary inline-flex items-center gap-2"
-                >
-                  <Tooth size={18} />
-                  Start Scanning
-                </Link>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link
+                    to="/upload"
+                    className="btn btn-primary inline-flex items-center gap-2"
+                  >
+                    <Tooth size={18} />
+                    Start Analysis
+                  </Link>
+                  <Link
+                    to="/clinics"
+                    className="btn btn-secondary inline-flex items-center gap-2"
+                  >
+                    <MapPin size={18} />
+                    Find Clinics
+                  </Link>
+                </div>
               </div>
               <div className="md:w-1/2 bg-primary-100 p-8 md:p-12 flex items-center justify-center">
                 <img

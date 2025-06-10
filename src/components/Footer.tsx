@@ -8,6 +8,7 @@ const Footer = () => {
     { name: 'Home', path: '/' },
     { name: 'Upload Scan', path: '/upload' },
     { name: 'Learn', path: '/learn' },
+    { name: 'Find Clinics', path: '/clinics' },
   ];
 
   return (
@@ -18,10 +19,10 @@ const Footer = () => {
           <div className="col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <Tooth size={32} className="text-primary-600" />
-              <span className="text-2xl font-bold text-primary-600">Neo Dental</span>
+              <span className="text-2xl font-bold text-primary-600">Dencation</span>
             </div>
             <p className="text-gray-600 text-base leading-relaxed">
-              AI-powered dental disease detection for better oral health care.
+              AI-powered dental education platform for better oral health awareness and clinic discovery.
             </p>
           </div>
 
@@ -49,10 +50,10 @@ const Footer = () => {
               Have questions? Reach out to us.
             </p>
             <a
-              href="mailto:contact@neodental.com"
+              href="mailto:contact@dencation.com"
               className="text-primary-600 hover:text-primary-700 text-base font-medium"
             >
-              contact@neodental.com
+              contact@dencation.com
             </a>
           </div>
         </div>
@@ -60,7 +61,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-gray-100 mt-12 pt-8 text-center">
           <p className="text-gray-600 text-base">
-            © {currentYear} Neo Dental. All rights reserved.
+            © {currentYear} Dencation. All rights reserved.
           </p>
         </div>
       </div>

@@ -14,6 +14,7 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'Scan', path: '/upload' },
     { name: 'Learn', path: '/learn' },
+    { name: 'Clinics', path: '/clinics' },
   ];
 
   return (
@@ -22,7 +23,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center gap-2">
             <Tooth size={28} className="text-primary-600" />
-            <span className="text-xl font-bold text-primary-600">Neo Dental</span>
+            <span className="text-xl font-bold text-primary-600">Dencation</span>
           </Link>
 
           {/* Desktop Navigation */}
